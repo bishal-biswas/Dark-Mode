@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode using Media Queries</title>
+    <style>
+        *{
+            padding: 0;margin: 0;font-family: sans-serif;
+        }
+        header{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header{
+            flex-direction: column;
+            background-color: #fff;
+        }
+        .container{
+            display: flex;
+            justify-content: center;box-shadow: 0 0 12px 1px #b1b1b1;
+            align-items: center;padding:10px;
+            width: 60vw;background-color: #ececec;
+        }
+        .container h1{
+            width: 30%;
+            color: #4b7aff;
+        }
+        .container p{
+            width: 70%;
+            color: #383838;
+        }
+        header .msg{
+            padding: 3em 0;
+            color: #383838;
+        }
+        @media (prefers-color-scheme: dark){
+            .container{background-color: rgb(60, 60, 60); box-shadow: 0 0 12px 1px #0a0a0a;}
+            .container p{color: #dcdcdc;}
+            header{background-color: #212121;}
+            header .msg{color: #dcdcdc;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dark Mode using Media color Scheme</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam impedit perferendis nam, consectetur, culpa id provident quis cupiditate possimus magnam ullam unde facere ut dicta quos vero optio eligendi voluptatem.
+            Numquam, debitis. Impedit, consequatur laborum dicta, maxime, incidunt voluptate quibusdam asperiores iusto voluptatem minima consequuntur quaerat! Error corporis ut reiciendis debitis dolores corrupti sed quam nulla. Maiores sunt tempore porro.
+            Eum a id laudantium ducimus cum illo at expedita consectetur, ex quisquam debitis, reprehenderit ea totam provident impedit accusamus dolorem delectus nemo eaque voluptatum quis placeat velit omnis! Repudiandae, esse.
+            Officiis, sed corporis, cumque pariatur accusamus mollitia unde animi omnis aspernatur fuga reprehenderit. Unde omnis mollitia iusto, maiores perferendis iste amet repellendus odit animi et ratione, vero sed quasi quo?
+            Maxime dolorum quae neque itaque repudiandae quaerat, fugiat totam nam fugit ex, ipsam placeat quibusdam veritatis. Beatae distinctio hic doloremque consequatur, alias expedita enim nulla, eaque voluptates aperiam voluptatem temporibus?</p>
+        </div>
+
+        <p class="msg">Go to your Desktop > Right Click > Then go to Personalize > Go To Colors Tab > Change Your Mode </p>
+    </header>
+</body>
+</html>
